@@ -1,0 +1,180 @@
+body {
+    background: url(https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX2666212.jpg), #5938DF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .overlayScreen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.9);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+    flex-direction: column;
+  }
+  
+  .overlayMessage {
+    color: white;
+  }
+  
+  .overlayScreen.show {
+    display: flex;
+  }
+  
+  #title{
+    height: 50px;
+    width: 1000px;
+  /*   background-color: white; */
+    color: white;
+    font-size: 3rem;
+  }
+  
+  #gameWrapper {
+    display: flex;
+    height: 500px;
+    width: 1100px;
+    background: url(https://thumbs.dreamstime.com/b/maple-wood-grain-texture-3401804.jpg), #A6721F;
+    border-radius: 80px;
+    border: 2px solid black;
+  }
+  
+  #leftSide {
+    height: 500px;
+    width: 150px;
+    background: url(https://thumbs.dreamstime.com/b/maple-wood-grain-texture-3401804.jpg), #A6721F;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #middle{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(2), auto);
+    height: 500px;
+    width: 900px;
+    background: url(https://thumbs.dreamstime.com/b/maple-wood-grain-texture-3401804.jpg), #A6721F;
+    border: 1px solid black;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pit {
+    display: flex;
+    flex-direction: column;
+    height: 240px;
+    width: calc(800px/6);
+    background: url(https://thumbs.dreamstime.com/b/maple-wood-grain-texture-3401804.jpg), #A6721F;
+    border: 1px solid black;
+    border-radius: 40px;
+    text-align: center;
+    line-height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.1);
+    flex-wrap: wrap;
+  }
+  
+  .pit:hover {
+    background: #Ffffff;
+  }
+  
+  .pitText {
+    font-size: 4rem;
+    color: white;
+  }
+  
+  .scorePit {
+    display: flex;
+    flex-direction: column;
+    height: 440px;
+    width: calc(800px/6);
+    background: url(https://thumbs.dreamstime.com/b/maple-wood-grain-texture-3401804.jpg), #A6721F;
+    border: 1px solid black;
+    border-radius: 40px;
+    text-align: center;
+    line-height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.1);
+    flex-wrap: wrap;  
+  }
+  
+  #rightSide {
+    height: 500px;
+    width: 150px;
+    background: url(https://thumbs.dreamstime.com/b/maple-wood-grain-texture-3401804.jpg), #A6721F;
+    border-radius: 40px;
+    text-align: center;
+    line-height: 250px;
+    justify-content: middle;
+    font-size: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .disabled {
+    pointer-events: none;
+  }
+  
+  .show {
+    display: flex;
+  }
+  
+  .bead {
+    height: 23px;
+    width: 23px;
+    border-radius: 50px;
+    assign-self: flex-end;
+    background: url(https://image.pngaaa.com/50/588050-middle.png);  
+  }
+  
+  .beadWrapper{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(5), auto);
+    background: brown;
+    height: 150px;
+    width: 115px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .scoreBeadWrapper{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(5), auto);
+    background: brown;
+    height: 300px;
+    width: 115px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .beadText {
+    color: white;
+  /*   background-color: black; */
+    font-size: 5rem;
+    text-align: center;
+    line-height: 60px;
+    height: 70px;
+    width: 105px;
+    -webkit-text-stroke: 1px black;
+  }
